@@ -13,6 +13,7 @@ let escenaActual = 'inicio';
 function mostrarEscena(nombreEscena) {
     const escena = historia[nombreEscena];
     parrafo.textContent = escena.texto;
+    document.getElementById("parrafo").src = escena.imagen;
 
     if (escena.opciones.length > 0) {
         opcion1.textContent = escena.opciones[0].texto;
